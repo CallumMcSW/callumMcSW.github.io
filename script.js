@@ -70,8 +70,32 @@ function showResult() {
     document.getElementById('next-button').style.display = 'none';
 }
 
+
+
 function showNextQuestion() {
     showQuestion();
 }
+
+function showQuestion() {
+    const questionEl = document.getElementById('question');
+    const optionsEl = document.getElementById('options');
+    const progressBar = document.getElementById('progress-bar');
+    
+    // Update progress bar
+    const progressPercentage = (currentQuestionIndex / questions.length) * 100;
+    progressBar.style.width = `${progressPercentage}%`;
+
+    questionEl.textContent = questions[currentQuestionIndex].question;
+    optionsEl.innerHTML = "";
+    questions[currentQuestionIndex].options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.onclick = selectOption;
+        optionsEl.appendChild(button);
+    });
+}
+
+// ... rest of the script remains the same
+
 
 showQuestion();
