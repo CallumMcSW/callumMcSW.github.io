@@ -2,14 +2,21 @@ let currentQuestionIndex = 0;
 let score = 0;
 const questions = [
     {
-        question: "What is the capital of France?",
-        options: ["Paris", "London", "Rome", "Madrid"],
-        answer: "Paris"
+        question: "What percentage of the world's water is available for human use?",
+        options: ["0.3%", "2.5%", "10%", "25%"],
+        answer: "0.3%",
+        explanation: "Only 2.5% of the Earth's water is freshwater, and only a fraction of that (about 0.3%) is available for human use, with the rest being trapped in glaciers, polar ice caps, and the atmosphere",
+        source: "1. United Nations Water (UN Water) reports 2. World Wildlife Fund (WWF) water scarcity information",
+        imaged: ""
+            
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        options: ["Mars", "Jupiter", "Saturn", "Venus"],
-        answer: "Mars"
+    question: "Which of these is NOT a common process in water treatment?",
+        options: ["Coagulation", "Desalination", "Electrodialysis", "Photocatalysis"],
+        answer: "Photocatalysis",
+        explanation: "Photocatalysis, while a promising method for purifying water, is not as commonly used in municipal water treatment processes as coagulation, desalination, and electrodialysis.",
+          source: "1. Environmental Protection Agency (EPA) on water treatment. 2. World Health Organization (WHO) guidelines for drinking-water quality.",
+        imaged: ""
     },
     {
         question: "What is the largest ocean on Earth?",
