@@ -6,7 +6,32 @@ const questions = [
         options: ["Paris", "London", "Rome", "Madrid"],
         answer: "Paris"
     },
-    // Add more questions here
+    {
+        question: "Which planet is known as the Red Planet?",
+        options: ["Mars", "Jupiter", "Saturn", "Venus"],
+        answer: "Mars"
+    },
+    {
+        question: "What is the largest ocean on Earth?",
+        options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+        answer: "Pacific Ocean"
+    },
+    {
+        question: "Who wrote 'Hamlet'?",
+        options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+        answer: "William Shakespeare"
+    },
+    {
+        question: "What is the chemical symbol for Gold?",
+        options: ["Au", "Ag", "Fe", "Gd"],
+        answer: "Au"
+    },
+    {
+        question: "In what year did the Titanic sink?",
+        options: ["1912", "1905", "1918", "1923"],
+        answer: "1912"
+    },
+    // You can add more questions here
 ];
 
 function showQuestion() {
